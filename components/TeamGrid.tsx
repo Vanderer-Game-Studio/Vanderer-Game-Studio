@@ -8,12 +8,12 @@ const teamMembers: TeamMember[] = [
   {
     id: '1',
     name: 'Passakron Presing',
-    role: 'Founder & Lead Game Designer & Technical Designer',
+    role: 'Founder & Lead Game & Technical Designer',
     class: 'Systems Innovator',
     classDescription: 'Designs the rules, flow, and feel of entire worlds turning ideas into playable reality.',
     level: 8,
     avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-1/362264749_1245065982870267_7975081265329506715_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=36aj4_3vVA4Q7kNvwHNMDcg&_nc_oc=Admlxn81Vvte8DE6fVTZWiLGvKDDUoaXENN3qSvvvsYua3xTQrtz9MSN-R273lOTqrGZjj2y66X33CNhA1Y7h4gN&_nc_zt=24&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=7enV6xw6pNsi2z4BVmg06A&oh=00_AfjzKSBRvPmcWI0xa1t0sVXOMuDQjU6rc7W754rrM95dtA&oe=6923E28A',
-    specialty: 'Vision Shaper'
+    specialty: 'Creative Direction & Systems Design'
   },
   { 
     id: '2', 
