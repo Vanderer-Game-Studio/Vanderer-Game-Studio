@@ -5,55 +5,55 @@ import RevealSection from './ui/RevealSection';
 import Tooltip from './ui/Tooltip';
 
 const teamMembers: TeamMember[] = [
-  { 
-    id: '1', 
-    name: 'Tanasan Maknuen', 
-    role: 'Founder & GameDev', 
-    class: 'Code Architect', 
-    classDescription: 'Constructs the logic backbone of the digital realm. Master of structural integrity.',
-    level: 5, 
-    avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-1/418799580_3582927655358155_4959526995083791051_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=hyw_3hXJZckQ7kNvwFtg-E_&_nc_oc=AdkD-RHGJ9dpGBZSTPs-dDR8nO8l3_4gDBZnSbsKNn8PE_ANEfjaiorGKbVhauw1yL3ZHv75hVHUgBkT7P30jnng&_nc_zt=24&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=5k-MV02HaYyPb6xL-ojGWg&oh=00_AfhlYjTvGmzGGA_6--xPKTzSPRWjk0oEWFvKsFL5zsJ5Qg&oe=6923DA47', 
-    specialty: 'Systems Logic' 
+  {
+    id: '1',
+    name: 'Passakron Presing',
+    role: 'Founder & Lead Game Designer & Technical Designer',
+    class: 'Systems Innovator',
+    classDescription: 'Designs the rules, flow, and feel of entire worlds turning ideas into playable reality.',
+    level: 8,
+    avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-1/362264749_1245065982870267_7975081265329506715_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=36aj4_3vVA4Q7kNvwHNMDcg&_nc_oc=Admlxn81Vvte8DE6fVTZWiLGvKDDUoaXENN3qSvvvsYua3xTQrtz9MSN-R273lOTqrGZjj2y66X33CNhA1Y7h4gN&_nc_zt=24&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=7enV6xw6pNsi2z4BVmg06A&oh=00_AfjzKSBRvPmcWI0xa1t0sVXOMuDQjU6rc7W754rrM95dtA&oe=6923E28A',
+    specialty: 'Vision Shaper'
   },
   { 
     id: '2', 
     name: 'Thirawoot Phuangbubpha ', 
-    role: 'Lead GameDev', 
-    class: 'Non Sleeper', 
-    classDescription: 'Threads light and shadow into perceivable reality. Manipulates RGB values at will.',
+    role: 'Founder & Lead Programmer', 
+    class: 'Core Engineer', 
+    classDescription: 'Builds the fundamental technologies that power the experience from the inside out.',
     level: 9, 
     avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-1/500221780_1676086833016407_57719856168391397_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=1d2534&_nc_ohc=P1Bx9urSAEcQ7kNvwFZqiRs&_nc_oc=AdlwifW9Q_KhWRNkEZIf65pTuEJN1gnHku7xuV4ofj3u_vSe8TTVqOC-v39L6gevFP9Ovoq-TCqvfF4GThD2HVT7&_nc_zt=24&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=ravDOjSLf1GTpNk89eQI8Q&oh=00_Afjnta1mPoSVhJc_zTctHWGQLBc3hLLCQ_i3TBVRWPXk6w&oe=6923DC97', 
-    specialty: 'Ad Kai' 
+    specialty: 'High-Performance Programming' 
   },
-  { 
-    id: '3', 
-    name: 'Passakron Presing', 
-    role: 'Gameplay Engineer', 
-    class: 'Mechanic', 
-    classDescription: 'Fine-tunes the laws of physics for maximum chaos. Greases the gears of interaction.',
-    level: 8, 
-    avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-1/362264749_1245065982870267_7975081265329506715_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=36aj4_3vVA4Q7kNvwHNMDcg&_nc_oc=Admlxn81Vvte8DE6fVTZWiLGvKDDUoaXENN3qSvvvsYua3xTQrtz9MSN-R273lOTqrGZjj2y66X33CNhA1Y7h4gN&_nc_zt=24&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=7enV6xw6pNsi2z4BVmg06A&oh=00_AfjzKSBRvPmcWI0xa1t0sVXOMuDQjU6rc7W754rrM95dtA&oe=6923E28A', 
-    specialty: 'Da Phu' 
+  {
+    id: '3',
+    name: 'Tanasan Maknuen',
+    role: 'Founder & Network Programmer',
+    class: 'Infrastructure Developer',
+    classDescription: 'Constructs stable, scalable systems that keep players connected seamlessly.',
+    level: 5,
+    avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-1/418799580_3582927655358155_4959526995083791051_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=hyw_3hXJZckQ7kNvwFtg-E_&_nc_oc=AdkD-RHGJ9dpGBZSTPs-dDR8nO8l3_4gDBZnSbsKNn8PE_ANEfjaiorGKbVhauw1yL3ZHv75hVHUgBkT7P30jnng&_nc_zt=24&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=5k-MV02HaYyPb6xL-ojGWg&oh=00_AfhlYjTvGmzGGA_6--xPKTzSPRWjk0oEWFvKsFL5zsJ5Qg&oe=6923DA47',
+    specialty: 'Network Architecture'
   },
   { 
     id: '4', 
     name: 'Pleum Phuripat', 
-    role: 'Concept Artist', 
-    class: 'Visionary', 
-    classDescription: 'Dreams up the nightmares before they exist. Projects mental images onto canvas.',
+    role: 'Co-Founder & Lead Artist', 
+    class: 'Visual Concept Lead', 
+    classDescription: 'Shapes the artistic identity of the project, defining style, tone, and atmosphere.',
     level: 7, 
     avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-1/352291406_793669329003050_5018448335506948922_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=lNEwqmVQ2bIQ7kNvwE3lVWe&_nc_oc=Adm-cHLZi_ZblPT53TqyvSXLgcFGnwfKXP_RNxQf8FBwlMZnorPVfl2RJTgF_wfWcAPdPHTNf3exQjmoFEuoR_wi&_nc_zt=24&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=FY7olTZCkl2y1q4qJlYZsQ&oh=00_AfhZ2lZlsSu68ui0GhDPVjkvKfotiHw0WWO9VZaoOjScrQ&oe=6923DF14', 
-    specialty: 'Design' 
+    specialty: 'Illustration & Art Direction' 
   },
   { 
     id: '5', 
     name: 'Nuttapon Kaewyoung', 
-    role: 'Technical Artist', 
-    class: 'The Mage', 
-    classDescription: 'Weaves silence into soundscapes. Controls emotions through frequency modulation.',
+    role: 'Co-Founder & Technical Artist', 
+    class: 'Technical Art Specialist', 
+    classDescription: 'Bridges art and technology, making visuals dynamic, optimized, and expressive.',
     level: 8, 
     avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-1/471538385_1825900391282670_1016770303027181498_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_ohc=9WysIjQMscIQ7kNvwEsUnl_&_nc_oc=AdnySapErlsvu8ltnr3n2vuUH-p0guKOxzR1H-88UMFY7pvsseAxQ3WbZlOTF36_W2dtio6RimcxBMEaYzRcfVWS&_nc_zt=24&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=rDrBniIYwVqKMKg0sDYsrw&oh=00_AfgolCSgtPDsS21lBKYcl0LOLy_M99LaVCfu1dvqFNnBGw&oe=6923E6AC', 
-    specialty: 'VFX/CODE' 
+    specialty: 'VFX & Shader Development' 
   },
   { 
     id: '6', 
@@ -68,32 +68,32 @@ const teamMembers: TeamMember[] = [
   { 
     id: '7', 
     name: 'Thanaphat Athithanaphokin', 
-    role: 'UI/UX Designer', 
-    class: 'Interface God', 
-    classDescription: 'Bridges the gap between flesh and code. Ensures the simulation feels seamless.',
+    role: 'Founder & UI/UX Designer', 
+    class: 'Experience Designer', 
+    classDescription: 'Creates intuitive, elegant interfaces that guide players effortlessly through the game.',
     level: 6, 
     avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t1.6435-1/52377599_403256183764114_6972718021659852800_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e99d92&_nc_ohc=hgRyI9ubkxIQ7kNvwEAisMW&_nc_oc=Adk3qse__Oyl6MbR_AQgGuC9gco-q6k8xto4lGYWGgr9POHzFiIFau7L7hHMqULJH4y1IG1r6850tLQ5yhDYvs1c&_nc_zt=24&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=KlqQGGPl7PXKMeSrfyGHug&oh=00_Afj0Kxek5bZg5qlgyS4PEgeQSKTuRzdt2Esbr_T8yKG0pg&oe=6945A16E', 
-    specialty: 'UX' 
+    specialty: 'Interaction & Interface Design' 
   },
   { 
     id: '8', 
     name: 'Ittiwat Kambanlue ', 
-    role: 'QA Lead', 
-    class: 'Bug Hunter', 
-    classDescription: 'Seeks imperfection to ensure perfection. The stress-test embodied.',
+    role: 'Founder & Gameplay Designer', 
+    class: 'Glitch Hunter', 
+    classDescription: 'Transforms concepts into engaging player experiences through clear mechanics and creative design thinking.',
     level: 7, 
     avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-1/463457106_8998183463546246_2063082739234119977_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e99d92&_nc_ohc=ZgbBgAfUFjcQ7kNvwEItbIY&_nc_oc=AdnsD3wQzk5HILHFXLDjlrmGbTo-mn3efLkvQ5xlSEfR5hKXrQvCuYVegvDozgcZD5ZHRt6W835KztjOwcR3AuB8&_nc_zt=24&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=PPZEsQRTh3PVKkq0tiepZQ&oh=00_AfhNKgITfIUvMzrgsgXVFAAKzOzBG-p5lQf6Gi6Rb5Imwg&oe=6923D881', 
-    specialty: 'Destruction' 
+    specialty: 'Gameplay Flow & Feature Design' 
   },
   { 
     id: '9', 
     name: 'Thanakrit Siriniraphada', 
-    role: 'Community Mgr', 
-    class: 'Bard', 
-    classDescription: 'Sings the songs of updates and patch notes. Boosts party morale +50%.',
+    role: 'Founder & Artist', 
+    class: 'Illustrator', 
+    classDescription: 'Creates visual assets that support and expand the project’s artistic vision under the direction of the art lead.',
     level: 8, 
     avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t1.6435-9/213402632_2957656891188363_8596176716749622038_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=liBDemMcNPQQ7kNvwEvm1Za&_nc_oc=AdmJL7ly5oG4IX4c7pdYvM2xVBegFR1B8g_wJDPfojNqtC8KqzpWxaUiSUXvJZNzuuo0vuvKlazWg_oJjduyKiwe&_nc_zt=23&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=FlFg76YQ6b-Zju7Pog_5jw&oh=00_AfjyP8lvz_-V6brH5OoPSWawzI3PZnCvzdzS5yrPftAf8g&oe=69458ECF', 
-    specialty: 'Socials' 
+    specialty: 'Illustration & Creative Support' 
   },
 ];
 
