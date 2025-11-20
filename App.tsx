@@ -4,59 +4,76 @@ import Hero from './components/Hero';
 import GameGrid from './components/GameGrid';
 import TeamGrid from './components/TeamGrid';
 import Footer from './components/Footer';
+import SystemTicker from './components/SystemTicker';
+import Preloader from './components/Preloader';
 
-// Optional Preloader Component
-const Preloader = ({ onComplete }: { onComplete: () => void }) => {
-  const [progress, setProgress] = useState(0);
+const App: React.FC = () => {
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setProgress(prev => {
-        if (prev >= 100) {
-          clearInterval(interval);
-          return 100;
-        }
-        return prev + Math.random() * 15;
-      });
-    }, 200);
-    return () => clearInterval(interval);
+    // Custom Smooth Scroll Logic with Cubic Easing
+    const easeInOutCubic = (t: number) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+
+    const smoothScroll = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      const anchor = target.closest('a');
+      
+      // Only intercept hash links on the same page
+      if (!anchor || !anchor.hash || !anchor.hash.startsWith('#') || anchor.origin !== window.location.origin) return;
+
+      const targetElement = document.querySelector(anchor.hash);
+      if (targetElement) {
+        e.preventDefault();
+        const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+        const startPosition = window.scrollY;
+        const distance = targetPosition - startPosition;
+        const duration = 1000; // Duration in ms
+        let startTime: number | null = null;
+
+        const animation = (currentTime: number) => {
+          if (startTime === null) startTime = currentTime;
+          const timeElapsed = currentTime - startTime;
+          const progress = Math.min(timeElapsed / duration, 1);
+          const ease = easeInOutCubic(progress);
+
+          window.scrollTo(0, startPosition + distance * ease);
+
+          if (timeElapsed < duration) {
+            requestAnimationFrame(animation);
+          } else {
+            // Update URL without scroll jump
+            history.pushState(null, "", anchor.hash);
+          }
+        };
+
+        requestAnimationFrame(animation);
+      }
+    };
+
+    document.addEventListener('click', smoothScroll);
+    return () => document.removeEventListener('click', smoothScroll);
   }, []);
 
-  useEffect(() => {
-    if (progress >= 100) {
-      setTimeout(onComplete, 800);
-    }
-  }, [progress, onComplete]);
-
   return (
-    <div className="fixed inset-0 bg-brand-black z-[100] flex flex-col items-center justify-center">
-       <div className="text-brand-magenta font-orbitron text-4xl font-black mb-4 glitch-text" data-text="VARDERER">VARDERER</div>
-       <div className="w-64 h-1 bg-gray-800 rounded-full overflow-hidden">
-         <div className="h-full bg-brand-magenta transition-all duration-200" style={{width: `${Math.min(progress, 100)}%`}}></div>
-       </div>
-       <div className="mt-2 font-mono text-xs text-brand-cyan">INITIALIZING_SYSTEM... {Math.floor(progress)}%</div>
-    </div>
+    <>
+      {isLoading && <Preloader onComplete={() => setIsLoading(false)} />}
+      
+      <div className={`relative transition-opacity duration-1000 ease-in-out ${
+        isLoading 
+          ? 'opacity-0 h-0 overflow-hidden min-h-0 pointer-events-none' 
+          : 'opacity-100 min-h-[100dvh]'
+      }`}>
+        <Navbar />
+        <main>
+          <Hero />
+          <GameGrid />
+          <TeamGrid />
+        </main>
+        <Footer />
+        <SystemTicker />
+      </div>
+    </>
   );
 };
-
-function App() {
-  const [loading, setLoading] = useState(true);
-
-  if (loading) {
-    return <Preloader onComplete={() => setLoading(false)} />;
-  }
-
-  return (
-    <div className="bg-brand-black min-h-screen text-white selection:bg-brand-magenta selection:text-white">
-      <Navbar />
-      <main>
-        <Hero />
-        <GameGrid />
-        <TeamGrid />
-      </main>
-      <Footer />
-    </div>
-  );
-}
 
 export default App;

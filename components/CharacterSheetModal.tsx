@@ -192,7 +192,7 @@ const CharacterSheetModal: React.FC<CharacterSheetModalProps> = ({
                      </div>
                      
                      <p className="mb-4 flex gap-2">
-                       <span className="text-brand-magenta">>></span> 
+                       <span className="text-brand-magenta"></span> 
                        <span className="text-white">SUBJECT ROLE:</span> {member.role}
                      </p>
                      

@@ -1,38 +1,41 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en"  class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VARDERER | Game Studio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>VARDERER | Variable Wanderers</title>
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Config -->
     <script>
       tailwind.config = {
         theme: {
           extend: {
+            colors: {
+              brand: {
+                black: '#0a0a0a',
+                dark: '#111111',
+                magenta: '#FF2E63',
+                magentaHover: '#E91E63',
+                white: '#ffffff',
+                gray: '#888888'
+              }
+            },
             fontFamily: {
               orbitron: ['Orbitron', 'sans-serif'],
               rajdhani: ['Rajdhani', 'sans-serif'],
               inter: ['Inter', 'sans-serif'],
-              mono: ['monospace'],
-            },
-            colors: {
-              brand: {
-                black: '#0e0e0e',
-                dark: '#1a1a1a',
-                gray: '#8892b0',
-                magenta: '#ff2e63',
-                magentaHover: '#ff0055',
-                cyan: '#08d9d6',
-              }
-            },
-            backgroundImage: {
-              'grid-pattern': "linear-gradient(to right, #2a2a2a 1px, transparent 1px), linear-gradient(to bottom, #2a2a2a 1px, transparent 1px)",
             },
             animation: {
-              'pulse-fast': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'spin-slow': 'spin 12s linear infinite',
+              'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
               'glitch': 'glitch 1s linear infinite',
             },
             keyframes: {
@@ -46,39 +49,24 @@
         }
       }
     </script>
+
     <style>
-      body {
-        background-color: #0e0e0e;
-        color: #ffffff;
-      }
       /* Custom Scrollbar */
       ::-webkit-scrollbar {
         width: 8px;
       }
       ::-webkit-scrollbar-track {
-        background: #0e0e0e; 
+        background: #0a0a0a; 
       }
       ::-webkit-scrollbar-thumb {
         background: #333; 
+        border-radius: 0px;
       }
       ::-webkit-scrollbar-thumb:hover {
-        background: #ff2e63; 
+        background: #FF2E63; 
       }
-      
-      .clip-hexagon {
-        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-      }
-      .clip-button {
-        clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
-      }
-      .clip-path-trapezoid {
-        clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
-      }
-      .clip-path-slant {
-        clip-path: polygon(10px 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
-      }
-      
-      /* Glitch Text Effect */
+
+      /* Glitch Text Effect Layers */
       .glitch-text {
         position: relative;
       }
@@ -90,51 +78,108 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: #0e0e0e;
       }
       .glitch-text::before {
         left: 2px;
-        text-shadow: -1px 0 #ff0055;
-        clip: rect(24px, 550px, 90px, 0);
-        animation: glitch-anim-2 3s infinite linear alternate-reverse;
+        text-shadow: -1px 0 #ff00c1;
+        clip: rect(44px, 9999px, 56px, 0);
+        animation: glitch-anim 5s infinite linear alternate-reverse;
       }
       .glitch-text::after {
         left: -2px;
-        text-shadow: -1px 0 #08d9d6;
-        clip: rect(85px, 550px, 140px, 0);
-        animation: glitch-anim 2.5s infinite linear alternate-reverse;
+        text-shadow: -1px 0 #00fff9;
+        clip: rect(44px, 9999px, 56px, 0);
+        animation: glitch-anim2 5s infinite linear alternate-reverse;
       }
+
       @keyframes glitch-anim {
-        0% { clip: rect(14px, 9999px, 121px, 0); }
-        20% { clip: rect(78px, 9999px, 47px, 0); }
-        40% { clip: rect(23px, 9999px, 87px, 0); }
-        60% { clip: rect(59px, 9999px, 19px, 0); }
-        80% { clip: rect(96px, 9999px, 117px, 0); }
-        100% { clip: rect(2px, 9999px, 74px, 0); }
+        0% { clip: rect(30px, 9999px, 10px, 0); }
+        20% { clip: rect(80px, 9999px, 90px, 0); }
+        40% { clip: rect(10px, 9999px, 50px, 0); }
+        60% { clip: rect(60px, 9999px, 20px, 0); }
+        80% { clip: rect(90px, 9999px, 80px, 0); }
+        100% { clip: rect(40px, 9999px, 30px, 0); }
       }
-      @keyframes glitch-anim-2 {
-        0% { clip: rect(65px, 9999px, 110px, 0); }
-        20% { clip: rect(12px, 9999px, 53px, 0); }
-        40% { clip: rect(96px, 9999px, 13px, 0); }
-        60% { clip: rect(45px, 9999px, 89px, 0); }
-        80% { clip: rect(21px, 9999px, 65px, 0); }
-        100% { clip: rect(86px, 9999px, 34px, 0); }
+      @keyframes glitch-anim2 {
+        0% { clip: rect(60px, 9999px, 20px, 0); }
+        20% { clip: rect(10px, 9999px, 50px, 0); }
+        40% { clip: rect(90px, 9999px, 10px, 0); }
+        60% { clip: rect(30px, 9999px, 80px, 0); }
+        80% { clip: rect(50px, 9999px, 90px, 0); }
+        100% { clip: rect(20px, 9999px, 60px, 0); }
+      }
+
+      /* Subtle Hover Glitch for Team Cards */
+      @keyframes glitch-skew {
+        0% { transform: skew(0deg); }
+        20% { transform: skew(-10deg); }
+        40% { transform: skew(10deg); }
+        60% { transform: skew(-5deg); }
+        80% { transform: skew(5deg); }
+        100% { transform: skew(0deg); }
+      }
+      
+      .glitch-hover-text {
+        display: inline-block;
+        transition: color 0.3s;
+      }
+
+      .group:hover .glitch-hover-text {
+        animation: glitch-skew 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+        color: #FF2E63;
+        text-shadow: 2px 0 #00ffff, -2px 0 #ff00ff;
+      }
+
+      /* Button Hover Glitch (Preserves Skew) */
+      @keyframes glitch-button-skew {
+        0% { transform: skew(12deg) translate(0); }
+        20% { transform: skew(12deg) translate(-2px, 1px); }
+        40% { transform: skew(12deg) translate(-2px, -1px); }
+        60% { transform: skew(12deg) translate(2px, 1px); }
+        80% { transform: skew(12deg) translate(2px, -1px); }
+        100% { transform: skew(12deg) translate(0); }
+      }
+
+      .btn-glitch-hover:hover > span {
+        animation: glitch-button-skew 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+        text-shadow: 2px 0 rgba(0, 255, 255, 0.5), -2px 0 rgba(255, 0, 255, 0.5);
+      }
+
+      /* Grid Background */
+      .bg-grid-pattern {
+        background-image: linear-gradient(to right, #222 1px, transparent 1px),
+                          linear-gradient(to bottom, #222 1px, transparent 1px);
+        background-size: 40px 40px;
+      }
+      
+      /* Scanline effect */
+      .scanline {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.1));
+        background-size: 100% 4px;
+        pointer-events: none;
+        z-index: 50;
+        opacity: 0.3;
       }
     </style>
   <script type="importmap">
 {
   "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
     "react": "https://aistudiocdn.com/react@^19.2.0",
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "recharts": "https://aistudiocdn.com/recharts@^3.4.1",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
     "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
   }
 }
 </script>
 <link rel="stylesheet" href="/index.css">
 </head>
-  <body>
+  <body class="bg-brand-black text-white antialiased overflow-x-hidden selection:bg-brand-magenta selection:text-white">
+    <div class="scanline"></div>
     <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>

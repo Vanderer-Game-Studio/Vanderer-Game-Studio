@@ -9,7 +9,7 @@ const teamMembers: TeamMember[] = [
   {
     id: '1',
     name: 'Passakron Presing',
-    role: 'Founder & Lead Game Designer',
+    role: 'Founder & Lead Game & Technical Designer',
     class: 'Systems Innovator',
     classDescription: 'Designs the rules, flow, and feel of entire worlds turning ideas into playable reality.',
     level: 8,
@@ -24,7 +24,7 @@ const teamMembers: TeamMember[] = [
       { subject: 'Stamina', A: 80, fullMark: 100 },
     ],
     equipment: ['Unity', 'Unreal Engine', 'C#', 'Jira', 'Miro'],
-    description: 'Passakron operates at the intersection of narrative and mechanic. With a level 8 clearance in System Architecture, he ensures that every gameplay loop feeds into the core player fantasy.'
+    description: "Passakron operates at the intersection of narrative and mechanic. With a level 8 clearance in System Architecture, he ensures that every gameplay loop feeds into the core player fantasy."
   },
   { 
     id: '2', 
@@ -63,7 +63,7 @@ const teamMembers: TeamMember[] = [
       { subject: 'Agility', A: 70, fullMark: 100 },
       { subject: 'Stamina', A: 85, fullMark: 100 },
     ],
-    equipment: ['AWS', 'Photon', 'Mirror', 'Node.js', 'Docker'],
+    equipment: ['C++', 'Python','C#','Html','CSS','JavaScript','TypeScript','AWS', 'Photon', 'Mirror', 'Node.js', 'Docker'],
     description: 'Tanasan maintains the digital highways. His code ensures that packets arrive on time, every time, preventing the void from consuming player data.'
   },
   { 
