@@ -18,10 +18,11 @@ const RevealSection: React.FC<RevealProps> = ({
 
   useEffect(() => {
     const observer = new IntersectionObserver(([entry]) => {
-      // Set visibility based on intersection state for two-way transition
-      setIsVisible(entry.isIntersecting);
+      if (entry.isIntersecting) {
+        setIsVisible(true);
+      }
     }, {
-      threshold: 0.15, // Trigger when 15% of the element is visible
+      threshold: 0.15, 
       rootMargin: "0px 0px -50px 0px" 
     });
 

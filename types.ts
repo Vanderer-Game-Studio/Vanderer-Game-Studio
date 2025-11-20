@@ -1,26 +1,31 @@
-export interface Game {
-  id: string;
-  title: string;
-  description: string;
-  imageUrl: string;
-  tags: string[];
-  steamUrl?: string;
-  itchUrl?: string;
-  status: 'Released' | 'Early Access' | 'In Development';
+export interface Stat {
+  subject: string;
+  A: number;
+  fullMark: number;
 }
 
 export interface TeamMember {
   id: string;
   name: string;
   role: string;
-  class: string; // RPG Style Class (e.g., "Code Sorcerer")
-  classDescription?: string; // Description for the tooltip
-  level: number; // Years of experience
+  class: string;
+  classDescription: string;
+  level: number;
   avatarUrl: string;
   specialty: string;
+  // New fields for Character Sheet
+  stats: Stat[];
+  description?: string;
+  equipment: string[];
 }
 
-export interface NavLink {
-  label: string;
-  href: string;
+export interface Game {
+  id: string;
+  title: string;
+  description: string;
+  imageUrl: string;
+  tags: string[];
+  status: 'In Development' | 'Released' | 'Prototype';
+  steamUrl?: string;
+  itchUrl?: string;
 }

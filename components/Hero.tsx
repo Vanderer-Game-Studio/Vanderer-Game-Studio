@@ -84,7 +84,7 @@ const Hero: React.FC = () => {
           </Button>
         </div>
 
-        {/* Scroll Indicator - Moved to Middle Screen Area */}
+        {/* Scroll Indicator */}
         <a 
           href="#games" 
           className="mt-12 md:mt-16 flex flex-col items-center gap-2 opacity-50 hover:opacity-100 transition-opacity duration-300 animate-bounce cursor-pointer group"

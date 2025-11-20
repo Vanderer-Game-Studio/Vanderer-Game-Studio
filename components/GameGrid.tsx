@@ -2,7 +2,7 @@ import React from 'react';
 import { Game } from '../types';
 import Button from './ui/Button';
 import RevealSection from './ui/RevealSection';
-import { Gamepad, Download, ExternalLink } from 'lucide-react';
+import { Gamepad, Download } from 'lucide-react';
 
 const games: Game[] = [
   {
@@ -18,7 +18,7 @@ const games: Game[] = [
   {
     id: '2',
     title: 'NChanter',
-    description: 'In this game, you grow up under the care of your grandfather, the village shaman. He once used his mystical powers to protect the village from evil forces, ensuring peace for many years, while also running a shaman shop to help the villagers. As you grow older, you decide to leave the village and move to the city to pursue other opportunities.',
+    description: 'In this game, you grow up under the care of your grandfather, the village shaman. He once used his mystical powers to protect the village from evil forces. As you grow older, you decide to leave the village and move to the city to pursue other opportunities.',
     imageUrl: 'https://img.itch.zone/aW1nLzE4Nzc1ODI4LnBuZw==/347x500/h%2FxFfM.png',
     tags: ['Role Playing','Puzzle'],
     status: 'Released',
