@@ -29,3 +29,7 @@ export interface Game {
   steamUrl?: string;
   itchUrl?: string;
 }
+export interface NavLink {
+  label: string;
+  href: string;
+}

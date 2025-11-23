@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Game } from '../types';
 import Button from './ui/Button';
 import RevealSection from './ui/RevealSection';
-import { Gamepad, Download } from 'lucide-react';
+import Modal from './ui/Modal';
+import { Gamepad,Download, ChevronDown, ChevronUp } from 'lucide-react';
 
 const games: Game[] = [
   {
@@ -30,9 +31,51 @@ The game is currently in a demo version. You may encounter issues during gamepla
     steamUrl: 'https://store.steampowered.com/',
     itchUrl: 'https://excavate.itch.io/nchanter'
   },
+  {
+    id: '3',
+    title: 'Elementaria',
+    description: `Play as an Elemental Mage battling bosses. Both you and the boss spin to choose elements—strategically spin to counter the boss's element and claim victory!`,
+    imageUrl: 'https://img.itch.zone/aW1nLzE5NTYzNzI4LnBuZw==/315x250%23c/t2Aiv8.png',
+    tags: ['Strategy','Fantacy'],
+    status: 'Released',
+    steamUrl: 'https://store.steampowered.com/',
+    itchUrl: 'https://excavate.itch.io/elementaria'
+  },
+    {
+    id: '4',
+    title: 'PRYSM',
+    description: ``,
+    imageUrl: 'https://img.itch.zone/aW1nLzIzMzQ4MjE5LnBuZw==/315x250%23c/Du%2BAsW.png',
+    tags: ['Action','Platformer','Bullet Hell'],
+    status: 'Released',
+    steamUrl: 'https://store.steampowered.com/',
+    itchUrl: 'https://excavate.itch.io/prysm'
+    },
+    // {
+    // id: '5',
+    // title: 'PRYSM',
+    // description: ``,
+    // imageUrl: 'https://img.itch.zone/aW1nLzIzMzQ4MjE5LnBuZw==/315x250%23c/Du%2BAsW.png',
+    // tags: ['Action','Platformer','Bullet Hell'],
+    // status: 'Released',
+    // steamUrl: 'https://store.steampowered.com/',
+    // itchUrl: 'https://excavate.itch.io/prysm'
+    // },
+
 ];
 
 const GameGrid: React.FC = () => {
+  const [showAll, setShowAll] = useState(false);
+  
+  const [modalOpen, setModalOpen] = useState(false);
+  const INITIAL_COUNT = 4;
+  const visibleGames = showAll ? games : games.slice(0, INITIAL_COUNT);
+  const handleLinkClick = (e: React.MouseEvent, url?: string) => {
+    if (!url || url === '' || url === 'https://store.steampowered.com/' || url === 'https://itch.io/') {
+      e.preventDefault();
+      setModalOpen(true);
+    }
+  };
   return (
     <section id="games" className="py-24 bg-brand-dark relative border-t border-white/5">
       <div className="container mx-auto px-6">
@@ -51,7 +94,7 @@ const GameGrid: React.FC = () => {
         </RevealSection>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {games.map((game, index) => (
+          {visibleGames.map((game, index) => (
             <RevealSection key={game.id} delay={index * 100}>
               <div 
                 className="group relative bg-brand-black border border-brand-gray/20 hover:border-brand-magenta transition-all duration-300 overflow-hidden h-full flex flex-col"
@@ -100,6 +143,7 @@ const GameGrid: React.FC = () => {
                       icon={Gamepad} 
                       className="flex-1 text-xs"
                       href={game.steamUrl}
+                      onClick={(e) => handleLinkClick(e, game.steamUrl)}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -110,6 +154,7 @@ const GameGrid: React.FC = () => {
                       icon={Download} 
                       className="flex-1 text-xs"
                       href={game.itchUrl}
+                      onClick={(e) => handleLinkClick(e, game.itchUrl)}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -121,7 +166,29 @@ const GameGrid: React.FC = () => {
             </RevealSection>
           ))}
         </div>
+
+        {/* See More Toggle */}
+        {games.length > INITIAL_COUNT && (
+          <div className="mt-16 flex justify-center">
+             <Button 
+                variant="outline" 
+                onClick={() => setShowAll(!showAll)}
+                icon={showAll ? ChevronUp : ChevronDown}
+                className="w-full md:w-auto min-w-[200px]"
+             >
+                {showAll ? "Show Less" : "See All Games"}
+             </Button>
+          </div>
+        )}
+
       </div>
+        <Modal 
+        isOpen={modalOpen} 
+        onClose={() => setModalOpen(false)}
+        title="Access Denied"
+      >
+        <p>This uplink is currently offline or the artifact has not yet been deployed to this platform. Please check back later, Varderer.</p>
+      </Modal>
     </section>
   );
 };
