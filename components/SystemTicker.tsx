@@ -26,7 +26,7 @@ const SystemTicker: React.FC = () => {
                 FIREWALL: ACTIVE (0 THREATS)
               </span>
               <span className="flex items-center gap-2 text-white">
-                 /// CURRENT_OBJECTIVE: DEPLOY_PROJECT_NEON ///
+                 /// CURRENT_OBJECTIVE: Baby May Cry ///
               </span>
               <span className="flex items-center gap-2">
                 <Battery size={12} className="text-yellow-400" /> 
