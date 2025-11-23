@@ -8,7 +8,12 @@ const games: Game[] = [
   {
     id: '1',
     title: 'Baby May Cry',
-    description: 'A high-speed cyberpunk racing game where the track generates procedurally based on the music you upload. Outrun the firewall.',
+    description: `You are a nanny left alone in a quiet mansion. Your duty is to keep the babies safe, but every time a baby cries, it seems to be a signal calling out something hidden in the silence... Can you survive until dawn in a night where "silence" is your only weapon?
+Key Feature
+↪︎  Baby Management: You must manage and care for multiple babies simultaneously under pressure and with limited resources, such as milk and diapers, to prevent them from crying.
+↪︎ Noise Detection Enemies: The enemies are invisible but hear everything... They track the player through the "sound" the player creates. The louder and longer the babies cry, the more accurately the enemies can detect your location.
+↪︎  Silent is Power: Accumulate "Silence" energy when the babies are calm to activate the power of a "Mysterious Artifact" to temporarily stop the babies from crying, freeze enemy movement, or escape in emergency situations.
+The game is currently in a demo version. You may encounter issues during gameplay and some content may be incomplete.`,
     imageUrl: 'https://img.itch.zone/aW1hZ2UvMzk1OTU5My8yMzk2NDg3OC5qcGc=/347x500/cfIXaX.jpg',
     tags: ['Horror', 'Action', 'Adventure'],
     status: 'In Development',
