@@ -13,7 +13,7 @@ const teamMembers: TeamMember[] = [
     class: 'Systems Innovator',
     classDescription: 'Designs the rules, flow, and feel of entire worlds turning ideas into playable reality.',
     level: 8,
-    avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-1/362264749_1245065982870267_7975081265329506715_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=109&ccb=1-7&_nc_sid=e99d92&_nc_ohc=36aj4_3vVA4Q7kNvwHNMDcg&_nc_oc=Admlxn81Vvte8DE6fVTZWiLGvKDDUoaXENN3qSvvvsYua3xTQrtz9MSN-R273lOTqrGZjj2y66X33CNhA1Y7h4gN&_nc_zt=24&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=7enV6xw6pNsi2z4BVmg06A&oh=00_AfjzKSBRvPmcWI0xa1t0sVXOMuDQjU6rc7W754rrM95dtA&oe=6923E28A',
+    avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-6/362264749_1245065982870267_7975081265329506715_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=cz-RijUKXM4Q7kNvwEQ_XtG&_nc_oc=AdlHS9uvmWHqSMfCT9HWuQ473ZLubfFgkMOWdncGyj4XV9-wxqusfdCLaRJaxx99aqZ9lW8Xhcjz4LumIOHhuRos&_nc_zt=23&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=qFCsIUgVIsTdyhj3ftlzOQ&oh=00_AfkOgH5H3ZDjqDmcro7Eqb8McTuFzyoj_tJxJqJqS6ADPA&oe=6937AF4C',
     specialty: 'Creative Direction & Systems Design',
     stats: [
       { subject: 'Logic', A: 95, fullMark: 100 },
@@ -33,7 +33,7 @@ const teamMembers: TeamMember[] = [
     class: 'Core Engineer', 
     classDescription: 'Builds the fundamental technologies that power the experience from the inside out.',
     level: 9, 
-    avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-1/500221780_1676086833016407_57719856168391397_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=1d2534&_nc_ohc=P1Bx9urSAEcQ7kNvwFZqiRs&_nc_oc=AdlwifW9Q_KhWRNkEZIf65pTuEJN1gnHku7xuV4ofj3u_vSe8TTVqOC-v39L6gevFP9Ovoq-TCqvfF4GThD2HVT7&_nc_zt=24&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=ravDOjSLf1GTpNk89eQI8Q&oh=00_Afjnta1mPoSVhJc_zTctHWGQLBc3hLLCQ_i3TBVRWPXk6w&oe=6923DC97', 
+    avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-1/500221780_1676086833016407_57719856168391397_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=1d2534&_nc_ohc=9vCGd-zpIWYQ7kNvwFiAxo8&_nc_oc=AdlERZ5u_v9EP2RR_kEHVjt3vI2w8rhCzaW-lJnvItHZyCOG2oMBYqp3GL33wqFy-AdmS6P0h4IJpt_Gf6vU8CWv&_nc_zt=24&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=Y0GFSWh7bNsB27pcYvSY8w&oh=00_AfkZLmnyHDJKml1aGRhuT9N8ilUnfvENtZaKQ0M7VO2a9A&oe=6937A317', 
     specialty: 'High-Performance Programming',
     stats: [
       { subject: 'Logic', A: 98, fullMark: 100 },
@@ -53,7 +53,7 @@ const teamMembers: TeamMember[] = [
     class: 'Infrastructure Developer',
     classDescription: 'Constructs stable, scalable systems that keep players connected seamlessly.',
     level: 5,
-    avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-1/418799580_3582927655358155_4959526995083791051_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=hyw_3hXJZckQ7kNvwFtg-E_&_nc_oc=AdkD-RHGJ9dpGBZSTPs-dDR8nO8l3_4gDBZnSbsKNn8PE_ANEfjaiorGKbVhauw1yL3ZHv75hVHUgBkT7P30jnng&_nc_zt=24&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=5k-MV02HaYyPb6xL-ojGWg&oh=00_AfhlYjTvGmzGGA_6--xPKTzSPRWjk0oEWFvKsFL5zsJ5Qg&oe=6923DA47',
+    avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-1/418799580_3582927655358155_4959526995083791051_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_ohc=DVhZsQLHkqUQ7kNvwF-ZUJh&_nc_oc=AdmiGkim3wIFeXbSuhMtdkRgyOxvrs_9LOuca_C8codK_CbgZ62SejkZvKu1CN1QLYV7dIoS-8tjMqUuSWilxwNz&_nc_zt=24&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=m9s0XByxxVFRDwz2Z_JUEw&oh=00_AflnbdK3skTs6x5f-4pVsalaTSuU0wRYLf8ijrVFZvZBug&oe=6937A0C7',
     specialty: 'Network Architecture',
     stats: [
       { subject: 'Logic', A: 90, fullMark: 100 },
@@ -73,7 +73,7 @@ const teamMembers: TeamMember[] = [
     class: 'Visual Concept Lead', 
     classDescription: 'Shapes the artistic identity of the project, defining style, tone, and atmosphere.',
     level: 7, 
-    avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-1/352291406_793669329003050_5018448335506948922_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=lNEwqmVQ2bIQ7kNvwE3lVWe&_nc_oc=Adm-cHLZi_ZblPT53TqyvSXLgcFGnwfKXP_RNxQf8FBwlMZnorPVfl2RJTgF_wfWcAPdPHTNf3exQjmoFEuoR_wi&_nc_zt=24&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=FY7olTZCkl2y1q4qJlYZsQ&oh=00_AfhZ2lZlsSu68ui0GhDPVjkvKfotiHw0WWO9VZaoOjScrQ&oe=6923DF14', 
+    avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-1/352291406_793669329003050_5018448335506948922_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=105&ccb=1-7&_nc_sid=e99d92&_nc_ohc=aQPyJwqY71sQ7kNvwGfPPYu&_nc_oc=AdkDq8joaNSwQsDCEIRe7AJ3_IhddLJTufZAUrWOg_cp1NkYVvce5D3yIbiqZZpgXiGj5c_lntlE8I__y9OMcP-2&_nc_zt=24&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=V6mr6aCw1QXQ5TpW5a0U8g&oh=00_AfncEFphm9myJuK8JzH3uF3ThweLTVxI7EOVbS7f0MA-Bg&oe=6937A594', 
     specialty: 'Illustration & Art Direction',
     stats: [
       { subject: 'Logic', A: 60, fullMark: 100 },
@@ -93,7 +93,7 @@ const teamMembers: TeamMember[] = [
     class: 'Technical Art Specialist', 
     classDescription: 'Bridges art and technology, making visuals dynamic, optimized, and expressive.',
     level: 8, 
-    avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-1/471538385_1825900391282670_1016770303027181498_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_ohc=9WysIjQMscIQ7kNvwEsUnl_&_nc_oc=AdnySapErlsvu8ltnr3n2vuUH-p0guKOxzR1H-88UMFY7pvsseAxQ3WbZlOTF36_W2dtio6RimcxBMEaYzRcfVWS&_nc_zt=24&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=rDrBniIYwVqKMKg0sDYsrw&oh=00_AfgolCSgtPDsS21lBKYcl0LOLy_M99LaVCfu1dvqFNnBGw&oe=6923E6AC', 
+    avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-1/471538385_1825900391282670_1016770303027181498_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=101&ccb=1-7&_nc_sid=e99d92&_nc_ohc=g1eqD7qcut8Q7kNvwHhhogC&_nc_oc=AdlTu2pbHXSh0ShsgdVFtdkfqCK5SrWsY2nxXBXEBxCatynxSHfLzksFG_mBFu-vr9zavjTjwQHZkvw6HWKZxQbK&_nc_zt=24&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=G2AlpzaHsAu3xZtJd7vayQ&oh=00_AfmMlIkz7Cu2zXxQfZHYrs1erIwpozlVAmUQeejmUoo6aw&oe=6937AD2C', 
     specialty: 'VFX & Shader Development',
     stats: [
       { subject: 'Logic', A: 85, fullMark: 100 },
@@ -113,7 +113,7 @@ const teamMembers: TeamMember[] = [
     class: 'Lorekeeper', 
     classDescription: 'Chronicles the histories of worlds unborn. Guardian of the canonical timeline.',
     level: 1, 
-    avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-1/449527759_1567045697175839_8917440463219888663_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=Ujr44Ua7pxgQ7kNvwFakCK6&_nc_oc=AdnBN7xzqySw7ILVJJhO7ts8PwREYLwx83tfWUHaHjK0hw522v41ZDk7_pQHs0302pKvepuA87j-OJ2BAFFlPdJU&_nc_zt=24&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=iHgcAenkHtckoY9EH58FiQ&oh=00_AfjbmO0F0giGVIYG1YgRdgEBWe2istZiXrlJA9VR6-rkvg&oe=6923FE97', 
+    avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-1/449527759_1567045697175839_8917440463219888663_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=103&ccb=1-7&_nc_sid=e99d92&_nc_ohc=g4ZzZoj-jNIQ7kNvwHu4O6J&_nc_oc=Adnb1X0ANVVZ6jbKRfgxxT5Vzc2M1sWvoJ4v7u_uDTQujL8fHL65zOylCLyeYiL8X-VTi7Ixy0khg5Ey1sVsJa56&_nc_zt=24&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=P689M_JB665QKVx8GMyFfA&oh=00_Afk4PHHuoZU0td_W5eoV1QEKlG9Z8wr5p8rWXrpPysHbyw&oe=69378CD7', 
     specialty: 'Narrative Design',
     stats: [
       { subject: 'Logic', A: 70, fullMark: 100 },
@@ -153,7 +153,7 @@ const teamMembers: TeamMember[] = [
     class: 'Glitch Hunter', 
     classDescription: 'Transforms concepts into engaging player experiences through clear mechanics and creative design thinking.',
     level: 7, 
-    avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-1/463457106_8998183463546246_2063082739234119977_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e99d92&_nc_ohc=ZgbBgAfUFjcQ7kNvwEItbIY&_nc_oc=AdnsD3wQzk5HILHFXLDjlrmGbTo-mn3efLkvQ5xlSEfR5hKXrQvCuYVegvDozgcZD5ZHRt6W835KztjOwcR3AuB8&_nc_zt=24&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=PPZEsQRTh3PVKkq0tiepZQ&oh=00_AfhNKgITfIUvMzrgsgXVFAAKzOzBG-p5lQf6Gi6Rb5Imwg&oe=6923D881', 
+    avatarUrl: 'https://scontent.fbkk25-1.fna.fbcdn.net/v/t39.30808-1/463457106_8998183463546246_2063082739234119977_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e99d92&_nc_ohc=clmhQ86RJoIQ7kNvwEYj9cw&_nc_oc=AdmU6z-g8J8p1jCDCv0MBVMqQziYy01Qh1iv_Te9DqoWFAYfZ79DkChbYg4DCv13ke30wV9QnaTfIPeuFK9kRdVL&_nc_zt=24&_nc_ht=scontent.fbkk25-1.fna&_nc_gid=FReWk98zF3A0OcTzqbNBhw&oh=00_AfmIslJVDqGhT2-1Q5H61-6UqWvc9J4jT5EE3dQZZqcVXQ&oe=69379F01', 
     specialty: 'Gameplay Flow & Feature Design',
     stats: [
       { subject: 'Logic', A: 85, fullMark: 100 },
